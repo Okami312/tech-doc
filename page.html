@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThinkPad Field Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>
+      <span class="brand-dot" aria-hidden="true"></span>
+      ThinkPad Field Guide
+    </header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Choosing_a_Model">Choosing a Model</a>
+    <a class="nav-link" href="#Keyboard_and_TrackPoint">Keyboard and TrackPoint</a>
+    <a class="nav-link" href="#Upgrading_RAM_and_Storage">Upgrading RAM and Storage</a>
+    <a class="nav-link" href="#Battery_Care">Battery Care</a>
+    <a class="nav-link" href="#Cleaning_and_Cooling">Cleaning and Cooling</a>
+    <a class="nav-link" href="#Running_Linux">Running Linux</a>
+    <a class="nav-link" href="#BIOS_and_Firmware">BIOS and Firmware</a>
+    <p class="nav-note">Specs vary by model. Check <a href="https://psref.lenovo.com" target="_blank" rel="noopener">Lenovo PSREF</a> for yours.</p>
+  </nav>
+
+  <main id="main-doc">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>ThinkPad Field Guide</h1>
+        <p class="lede">How to pick, upgrade and look after a ThinkPad, from a used T470 to a new X13.</p>
+      </div>
+      <div class="keyboard" aria-hidden="true">
+        <div class="keys">
+          <span>T</span><span>Y</span><span>U</span>
+          <span>G</span><span>H</span><span>J</span>
+          <span>B</span><span>N</span><span>M</span>
+          <i class="nub"></i>
+        </div>
+        <div class="buttons">
+          <span class="btn-left"></span><span class="btn-mid"></span><span class="btn-right"></span>
+        </div>
+      </div>
+    </div>
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>The first ThinkPad, the 700C, came out at IBM in 1992. Designer Richard Sapper based its plain black box on a Japanese bento lunch box, and that shape has barely changed since. Lenovo bought IBM's PC business in 2005 and still makes the line today.</p>
+      <p>People keep ThinkPads for years because many models are easy to open and repair, used parts are cheap, and Lenovo publishes a free hardware maintenance manual (HMM) for almost every model. The HMM shows every screw, cable and part number, so treat it as the real reference for your machine.</p>
+      <p>This guide covers the things owners ask about most:</p>
+      <ul>
+        <li>Which series and generation fits what you do</li>
+        <li>How to swap memory and SSDs safely</li>
+        <li>How to make the battery last longer</li>
+        <li>How to keep it cool, clean and quiet</li>
+        <li>How to set up Linux and keep firmware current</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Choosing_a_Model">
+      <header>Choosing a Model</header>
+      <p>The letter in front of the model number tells you what the machine is built for.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Series</th><th scope="col">Built for</th><th scope="col">Good to know</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>T</td><td>Everyday business work</td><td>The safe choice. Balanced size, ports and battery.</td></tr>
+            <tr><td>X</td><td>Travel</td><td>Small and light. The X1 Carbon is the flagship.</td></tr>
+            <tr><td>P</td><td>Heavy workloads</td><td>Mobile workstations with pro GPUs and more cooling.</td></tr>
+            <tr><td>E and L</td><td>Budget and fleets</td><td>Cheaper builds, often with more upgrade room.</td></tr>
+            <tr><td>Z</td><td>Premium design</td><td>AMD-only, thin, with fewer ports and no upgrades.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Reading the model name</h3>
+      <p>Older names put the generation in the number: the T420, T430 and T440 came out in 2011, 2012 and 2013. From 2020 Lenovo switched to screen size plus generation, so a T14 Gen 3 is a 14-inch T-series from the third year of that design. An "s" means slimmer (T480s), and AMD versions are labeled as such or end in 5 (T495).</p>
+      <p>The machine type on the sticker underneath, like <code>20L5</code> or <code>21CB</code>, is more precise than the name. Type it into PSREF to see the exact specs, ports and upgrade options.</p>
+
+      <h3>Popular used picks</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Model</th><th scope="col">Why people buy it</th><th scope="col">Watch out for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>X220 / T420</td><td>The last classic 7-row keyboard. Fully repairable, huge mod scene.</td><td>Old CPUs, dim screens, Wi-Fi card whitelist in the BIOS.</td></tr>
+            <tr><td>T480</td><td>Two RAM slots, a swappable rear battery, Thunderbolt 3, easy to service.</td><td>Update the Thunderbolt firmware. The stock screen is often a dim panel.</td></tr>
+            <tr><td>T14 Gen 1 AMD</td><td>Ryzen 4000 performance for little money, good Linux support.</td><td>Half the RAM is soldered, with one slot free.</td></tr>
+            <tr><td>X1 Carbon</td><td>Very light with a great keyboard and screen.</td><td>RAM is soldered on every generation, so buy the size you need.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Checks before you buy used</h3>
+      <ul>
+        <li>Ask for battery health as a percentage of design capacity, not just the age</li>
+        <li>Make sure no BIOS supervisor password is set. On many models it can't be removed.</li>
+        <li>Check whether the RAM is socketed, soldered or both before planning upgrades</li>
+        <li>Look for the right screen. Many models shipped with both a dim TN panel and a better IPS one.</li>
+        <li>Skip the T440, X240 and T540 if you want the TrackPoint buttons. That generation dropped them and the next one brought them back.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Keyboard_and_TrackPoint">
+      <header>Keyboard and TrackPoint</header>
+      <p>The TrackPoint is the red nub between the G, H and B keys, invented by Ted Selker at IBM Research. It doesn't actually move. Strain sensors measure how hard you push, and the harder you push, the faster the pointer goes, so your hands never leave the home row.</p>
+
+      <h3>Getting used to it</h3>
+      <p>Rest a finger on it lightly and push, don't drag. Hold the middle button and push to scroll in any direction. It feels odd for a day or two and then you won't want to go back.</p>
+      <p>If the pointer creeps on its own, let go for a few seconds. The TrackPoint re-centers itself when it isn't touched. Constant drift usually means a worn cap or a failing keyboard.</p>
+
+      <h3>Shortcuts</h3>
+      <ul>
+        <li><kbd>Fn</kbd> + <kbd>Esc</kbd> toggles FnLock, which swaps media keys and F1 to F12</li>
+        <li><kbd>Fn</kbd> + <kbd>Space</kbd> cycles the keyboard backlight</li>
+        <li><kbd>Fn</kbd> and <kbd>Ctrl</kbd> can be swapped in the BIOS under Config, Keyboard/Mouse</li>
+        <li><kbd>Fn</kbd> + <kbd>PgUp</kbd> turns on the ThinkLight on older models without a backlight</li>
+      </ul>
+
+      <h3>Caps and keyboards</h3>
+      <p>There are three main cap styles: Soft Dome (low and smooth), Classic Dome (taller with a grippy texture) and Soft Rim (concave, so your finger sits in it). Thin models like the X1 Carbon need low-profile caps, which don't fit the thicker T-series and the other way round.</p>
+      <p>Keyboards are cheap to replace. On T and X models from the T480 era and older, the keyboard comes out from the top after removing a couple of screws. On many newer models it's built into the palmrest, so the whole top cover gets replaced.</p>
+    </section>
+
+    <section class="main-section" id="Upgrading_RAM_and_Storage">
+      <header>Upgrading RAM and Storage</header>
+      <p>Many T, P, L and E models have at least one RAM slot and a standard M.2 SSD slot. Most thin X models have memory soldered to the board, so only storage can be changed.</p>
+      <div class="caution">
+        <p><strong>Before you open the case:</strong> turn off the built-in battery in the BIOS under Config, Power. The laptop powers off and won't turn on again until you plug in the charger, so nothing is live while you work.</p>
+      </div>
+
+      <h3>Step by step</h3>
+      <ol>
+        <li>Shut down, unplug the charger and disable the built-in battery</li>
+        <li>Loosen the bottom cover screws. On most recent models they stay attached to the cover.</li>
+        <li>Pry the cover off from the back edge with a plastic tool, not a screwdriver</li>
+        <li>Swap the part. RAM goes in at an angle and clicks down. An SSD goes in at an angle and is held by one screw.</li>
+        <li>Close it up and plug in the charger to wake it</li>
+        <li>The first boot after a RAM change may show a black screen for a minute while it trains the memory. Let it finish.</li>
+      </ol>
+
+      <h3>Choosing RAM</h3>
+      <ul>
+        <li>Match the type: DDR3L for the X230 and T430 era, DDR4 for the T470 to T14 Gen 1/2, DDR5 for newer machines with slots</li>
+        <li>Use two identical sticks when there are two slots. Dual channel can nearly double integrated graphics speed.</li>
+        <li>The official maximum in PSREF is often lower than what works. The T480 lists 32 GB, but many owners run 64 GB.</li>
+        <li>On models with soldered RAM plus a slot, matching the slot to the soldered size keeps the most memory in dual channel</li>
+      </ul>
+
+      <h3>Choosing an SSD</h3>
+      <p>Most models from 2016 on take an M.2 NVMe drive, usually 2280 length (22 mm wide, 80 mm long). Some thin and recent models only fit the short 2242. Older ones like the X230 use a 2.5-inch 7 mm SATA drive. Check the HMM before ordering.</p>
+      <p>Check what's installed now and how healthy it is. On Linux:</p>
+      <pre><code>sudo dmidecode -t memory | grep -E "Size|Speed|Type:"
+lsblk -o NAME,SIZE,MODEL
+sudo smartctl -a /dev/nvme0 | grep -E "Percentage Used|Data Units Written"</code></pre>
+      <p>To move your system to a new drive, clone it with Clonezilla from a USB stick, or do a fresh install and copy your files over. A fresh install is often the cleaner option on older machines.</p>
+    </section>
+
+    <section class="main-section" id="Battery_Care">
+      <header>Battery Care</header>
+      <p>Lithium batteries wear fastest when they sit full and warm. A ThinkPad that's plugged in all day at 100% can lose a noticeable amount of capacity within a year. Capping the charge at around 80% slows that down a lot.</p>
+
+      <h3>Check battery health</h3>
+      <p>Compare the battery's current full capacity with its design capacity. Under 80% means it's worn. On Windows, this writes a report to your user folder:</p>
+      <pre><code>powercfg /batteryreport</code></pre>
+      <p>On Linux, look at <code>energy-full</code> against <code>energy-full-design</code>:</p>
+      <pre><code>upower -i /org/freedesktop/UPower/devices/battery_BAT0</code></pre>
+
+      <h3>Set a charge limit</h3>
+      <p>On Windows, open Lenovo Vantage, go to Power, and set a custom charge threshold. On Linux, the <code>thinkpad_acpi</code> driver lets you set it directly:</p>
+      <pre><code>echo 75 | sudo tee /sys/class/power_supply/BAT0/charge_control_start_threshold
+echo 80 | sudo tee /sys/class/power_supply/BAT0/charge_control_end_threshold</code></pre>
+      <p>With these values the battery won't start charging until it drops below 75% and stops at 80%. They reset on reboot, so use TLP (covered in Running Linux) to keep them. The setting is stored in the battery controller, so a limit set in Linux also applies when you boot Windows, and the other way round.</p>
+      <p>Before a trip, charge to 100% once with <code>sudo tlp fullcharge</code>, or turn the limit off in Vantage.</p>
+
+      <h3>Two-battery models</h3>
+      <p>Models like the T470 and T480 have an internal battery and a removable rear one, called Power Bridge. You can swap the rear battery while the laptop is running. The laptop drains the rear one first, so that one wears faster and is the cheaper one to replace.</p>
+
+      <h3>General tips</h3>
+      <ul>
+        <li>Store a laptop you won't use for a while at about 50%</li>
+        <li>Avoid hot cars, and don't use it on a blanket or pillow where the vents get blocked</li>
+        <li>Buy replacement batteries from Lenovo or a known brand. Cheap clones often have far less capacity than claimed.</li>
+        <li>Stop using a battery that swells or lifts the keyboard or bottom cover, and replace it right away</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Cleaning_and_Cooling">
+      <header>Cleaning and Cooling</header>
+      <p>A ThinkPad that's a few years old often runs hot and loud because the fan and heatsink are clogged with dust. Cleaning them usually brings the noise and temperatures back to normal.</p>
+
+      <h3>Clean the fan</h3>
+      <ol>
+        <li>Disable the built-in battery and remove the bottom cover, as in the upgrade steps</li>
+        <li>Hold the fan blades still with a toothpick so they don't over-spin</li>
+        <li>Blow short bursts of compressed air through the heatsink fins from the inside out</li>
+        <li>Pick out any felt-like dust mat stuck between the fan and the fins</li>
+      </ol>
+
+      <h3>Replace the thermal paste</h3>
+      <p>Factory thermal paste dries out after several years. If the laptop still runs hot after cleaning, replacing the paste can drop CPU temperatures by 10°C or more. You'll need to remove the heatsink, so follow the HMM for your model, clean off the old paste with isopropyl alcohol, and apply a pea-sized amount of new paste.</p>
+
+      <h3>Watch temperatures</h3>
+      <p>On Linux, the <code>sensors</code> command from lm-sensors shows CPU and fan readings:</p>
+      <pre><code>sudo apt install lm-sensors
+sensors</code></pre>
+      <ul>
+        <li>Idle under 50°C is normal. Sustained load in the 80s and 90s is expected on thin models.</li>
+        <li>A fan that never spins up while the CPU is hot needs replacing</li>
+        <li>Clean the keyboard with the laptop off, using a soft brush and a slightly damp cloth</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Running_Linux">
+      <header>Running Linux</header>
+      <p>ThinkPads are some of the best-supported laptops for Linux. Lenovo certifies many models for Ubuntu and Fedora, and older models usually just work. Look up your model on the Ubuntu certified hardware list before buying if Linux is the plan.</p>
+
+      <h3>Power management with TLP</h3>
+      <p>TLP tunes power use and keeps your battery charge limits across reboots. Desktop environments often ship <code>power-profiles-daemon</code>, which conflicts with TLP, so turn that off first:</p>
+      <pre><code>sudo apt install tlp tlp-rdw
+sudo systemctl mask power-profiles-daemon
+sudo systemctl enable --now tlp
+sudo tlp-stat -b</code></pre>
+      <p>Then edit <code>/etc/tlp.conf</code>, set the thresholds, and run <code>sudo tlp start</code>:</p>
+      <pre><code>START_CHARGE_THRESH_BAT0=75
+STOP_CHARGE_THRESH_BAT0=80</code></pre>
+      <p>On a two-battery model, add the same lines with <code>BAT1</code>.</p>
+
+      <h3>Hardware support</h3>
+      <ul>
+        <li>The <code>thinkpad_acpi</code> driver handles the Fn keys, LEDs, fan and battery. Check it loaded with <code>sudo dmesg | grep thinkpad_acpi</code>.</li>
+        <li>The TrackPoint works out of the box. Change its speed under Mouse and Touchpad in GNOME, or the pointing stick settings in KDE.</li>
+        <li>Fingerprint readers use <code>fprintd</code>. Find your sensor ID with <code>lsusb</code> and check the libfprint supported devices list, because some older sensors aren't supported.</li>
+        <li>Intel Wi-Fi works everywhere. Some newer models ship with other Wi-Fi chips that need a recent kernel.</li>
+        <li>Turn off Secure Boot only if your distro asks you to. Ubuntu and Fedora boot fine with it on.</li>
+      </ul>
+
+      <h3>Fixing sleep problems</h3>
+      <p>If the battery drains fast while the lid is closed, check which sleep mode is active. <code>[deep]</code> is the traditional low-power sleep and <code>s2idle</code> is the newer modern standby:</p>
+      <pre><code>cat /sys/power/mem_sleep</code></pre>
+      <p>Some models have a Sleep State option in the BIOS under Config, Power. Setting it to Linux switches to deep sleep, which usually fixes the drain.</p>
+    </section>
+
+    <section class="main-section" id="BIOS_and_Firmware">
+      <header>BIOS and Firmware</header>
+      <p>Press <kbd>F1</kbd> right after powering on to open the BIOS setup. <kbd>F12</kbd> opens the boot menu, which you need for booting from a USB stick. On some models you press <kbd>Enter</kbd> first to get the startup menu, which lists all of these.</p>
+
+      <h3>Settings worth knowing</h3>
+      <ul>
+        <li>Config, Power: disable the built-in battery before repairs, and change the sleep state</li>
+        <li>Config, Keyboard/Mouse: swap Fn and Ctrl, and set the F1 to F12 default</li>
+        <li>Security, Secure Boot: turn it on or off, or reset the keys to factory</li>
+        <li>Security, Virtualization: turn on VT-x or AMD-V for virtual machines and WSL</li>
+        <li>Startup: set the boot order and choose UEFI only</li>
+      </ul>
+
+      <h3>Updating firmware</h3>
+      <p>Firmware updates fix security holes, battery bugs and hardware problems, so install them. On Linux, most ThinkPads get BIOS, Thunderbolt and dock updates through LVFS:</p>
+      <pre><code>fwupdmgr refresh
+fwupdmgr get-updates
+fwupdmgr update</code></pre>
+      <p>On Windows, use Lenovo Vantage or download the BIOS update from Lenovo's support site. If neither works, Lenovo also offers a bootable ISO you can write to a USB stick.</p>
+      <ul>
+        <li>Plug in the charger and make sure the battery is above 30% first</li>
+        <li>Never turn the laptop off while an update runs. It may reboot several times.</li>
+        <li>On the T480 and other 2018 models, install the Thunderbolt firmware update. Older versions could cause the controller to fail.</li>
+      </ul>
+
+      <h3>Passwords</h3>
+      <p>The BIOS has two password levels. A power-on password asks for the password at every boot and can usually be cleared by unplugging the CMOS battery. A supervisor password protects the BIOS settings, and on most models from the last decade it can't be removed without replacing the system board. Write it down if you set one.</p>
+    </section>
+  </main>
+</body>
+</html>
