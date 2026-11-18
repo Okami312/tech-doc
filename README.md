@@ -1,25 +1,25 @@
-# ThinkPad Field Guide
+# ThinkPad T470 Field Guide
 
-A one-page technical documentation site about picking, upgrading and looking after a ThinkPad, from a used T470 to a new X13.
+A one-page technical documentation site about the Lenovo ThinkPad T470: its specs, upgrades and care.
 
 ## Sections
 
 - Introduction
-- Choosing a Model
-- Keyboard and TrackPoint
-- Upgrading RAM and Storage
-- Battery Care
-- Cleaning and Cooling
-- Running Linux
-- BIOS and Firmware
+- Processor and Graphics
+- Memory and Storage
+- Display
+- Ports and Wireless
+- Battery and Power
+- Keyboard and Security
+- Linux and Firmware
 
 ## Running it
 
-There's no build step. Open `page.html` in a browser.
+There's no build step. Open `index.html` in a browser.
 
 ## Files
 
-- `page.html`: the page content and the fixed side navbar
+- `index.html`: the page content, the fixed side navbar, and a small script that adds a Copy button to every command block
 - `styles.css`: the styles, including the keyboard-themed hero and the tablet and mobile layouts
 
 ## Built with
@@ -27,4 +27,4 @@ There's no build step. Open `page.html` in a browser.
 - Plain HTML and CSS
 - IBM Plex Sans and IBM Plex Mono, loaded from Google Fonts
 
-Specs differ between models. Check [Lenovo PSREF](https://psref.lenovo.com) for the details of yours.
+Specs come from the [Lenovo PSREF](https://psref.lenovo.com) sheet for the ThinkPad T470 (February 2020). Not every option is sold in every region.

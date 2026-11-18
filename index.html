@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ThinkPad T470 Field Guide</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>
+                <span class="brand-dot" aria-hidden="true"></span>
+                ThinkPad T470 Field Guide
+            </header>
+            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Processor_and_Graphics"
+                >Processor and Graphics</a
+            >
+            <a class="nav-link" href="#Memory_and_Storage"
+                >Memory and Storage</a
+            >
+            <a class="nav-link" href="#Display">Display</a>
+            <a class="nav-link" href="#Ports_and_Wireless"
+                >Ports and Wireless</a
+            >
+            <a class="nav-link" href="#Battery_and_Power">Battery and Power</a>
+            <a class="nav-link" href="#Keyboard_and_Security"
+                >Keyboard and Security</a
+            >
+            <a class="nav-link" href="#Linux_and_Firmware"
+                >Linux and Firmware</a
+            >
+            <p class="nav-note">
+                Specs come from the Lenovo
+                <a
+                    href="https://psref.lenovo.com"
+                    target="_blank"
+                    rel="noopener"
+                    >PSREF</a
+                >
+                sheet for the T470 (February 2020). Not every option is sold in
+                every region.
+            </p>
+        </nav>
+
+        <main id="main-doc">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>ThinkPad T470 Field Guide</h1>
+                    <p class="lede">
+                        Specs, upgrades and care for Lenovo's 14-inch business
+                        laptop with the swappable rear battery.
+                    </p>
+                </div>
+                <div class="keyboard" aria-hidden="true">
+                    <div class="keys">
+                        <span>T</span><span>Y</span><span>U</span> <span>G</span
+                        ><span>H</span><span>J</span> <span>B</span
+                        ><span>N</span><span>M</span>
+                        <i class="nub"></i>
+                    </div>
+                    <div class="buttons">
+                        <span class="btn-left"></span
+                        ><span class="btn-mid"></span
+                        ><span class="btn-right"></span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <p>
+                    The ThinkPad T470 is a 14-inch business laptop built on
+                    Intel's 6th and 7th generation Core U-series processors. It
+                    keeps the things T-series owners care about: two RAM slots,
+                    a full set of ports, a TrackPoint with three physical
+                    buttons, and Lenovo's Power Bridge system with an internal
+                    battery plus a removable rear one.
+                </p>
+                <p>
+                    That mix makes it a popular used laptop. It's easy to open,
+                    parts are cheap, and Lenovo publishes a hardware maintenance
+                    manual (HMM) that shows every screw, cable and part number.
+                    Use the HMM as the real reference when you take yours apart.
+                </p>
+
+                <h3>At a glance</h3>
+                <div class="table-wrap">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Dimensions</td>
+                                <td>
+                                    336.6 x 232.5 x 19.95 mm (13.25" x 9.15" x
+                                    0.79")
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Weight</td>
+                                <td>
+                                    From 1.58 kg (3.49 lb) with a magnesium
+                                    display cover and 3-cell battery
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Case</td>
+                                <td>
+                                    Black. Magnesium hybrid or PPS display
+                                    cover, glass-fiber reinforced plastic
+                                    bottom.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Chipset</td>
+                                <td>Intel SoC (System on Chip) platform</td>
+                            </tr>
+                            <tr>
+                                <td>Operating system</td>
+                                <td>
+                                    Windows 10 Home 64, Windows 10 Pro 64, or
+                                    Windows 7 Professional 64 via downgrade
+                                    rights
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Durability</td>
+                                <td>MIL-STD-810G military testing</td>
+                            </tr>
+                            <tr>
+                                <td>Environment</td>
+                                <td>
+                                    EPEAT Gold (US only), ENERGY STAR 6.1,
+                                    RoHS-compliant
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Weight by configuration</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Display cover</th>
+                                <th scope="col">3-cell or 3 + 3-cell</th>
+                                <th scope="col">6-cell or 3 + 6-cell</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Magnesium</td>
+                                <td>1.58 kg / 3.49 lb</td>
+                                <td>1.78 kg / 3.92 lb</td>
+                            </tr>
+                            <tr>
+                                <td>PPS</td>
+                                <td>1.65 kg / 3.63 lb</td>
+                                <td>1.85 kg / 4.35 lb</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Checks before you buy used</h3>
+                <ul>
+                    <li>
+                        Ask for battery health as a percentage of design
+                        capacity for both batteries, not just their age
+                    </li>
+                    <li>
+                        Make sure no BIOS supervisor password is set. It can't
+                        easily be removed.
+                    </li>
+                    <li>
+                        Check which screen it has. The HD panel is much dimmer
+                        and narrower than the FHD IPS one.
+                    </li>
+                    <li>
+                        Look up the machine type on the sticker underneath in
+                        PSREF to see its exact processor, screen and options
+                    </li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Processor_and_Graphics">
+                <header>Processor and Graphics</header>
+                <p>
+                    Every T470 processor is a dual-core, four-thread Intel Core
+                    U-series chip with DDR4-2133 memory support. The 7th
+                    generation (Kaby Lake) chips run a little faster and have
+                    better video decoding, so they're the ones to look for.
+                </p>
+
+                <h3>6th generation (Skylake)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Processor</th>
+                                <th scope="col">Base</th>
+                                <th scope="col">Max Turbo</th>
+                                <th scope="col">Cache</th>
+                                <th scope="col">Graphics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>i5-6200U</td>
+                                <td>2.3 GHz</td>
+                                <td>2.8 GHz</td>
+                                <td>3 MB</td>
+                                <td>HD 520</td>
+                            </tr>
+                            <tr>
+                                <td>i5-6300U</td>
+                                <td>2.4 GHz</td>
+                                <td>3.0 GHz</td>
+                                <td>3 MB</td>
+                                <td>HD 520</td>
+                            </tr>
+                            <tr>
+                                <td>i7-6500U</td>
+                                <td>2.5 GHz</td>
+                                <td>3.1 GHz</td>
+                                <td>4 MB</td>
+                                <td>HD 520</td>
+                            </tr>
+                            <tr>
+                                <td>i7-6600U</td>
+                                <td>2.6 GHz</td>
+                                <td>3.4 GHz</td>
+                                <td>4 MB</td>
+                                <td>HD 520</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>The i7-6500U is not available in EMEA.</p>
+
+                <h3>7th generation (Kaby Lake)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Processor</th>
+                                <th scope="col">Base</th>
+                                <th scope="col">Max Turbo</th>
+                                <th scope="col">Cache</th>
+                                <th scope="col">Graphics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>i3-7100U</td>
+                                <td>2.4 GHz</td>
+                                <td>None</td>
+                                <td>3 MB</td>
+                                <td>HD 620</td>
+                            </tr>
+                            <tr>
+                                <td>i5-7200U</td>
+                                <td>2.5 GHz</td>
+                                <td>3.1 GHz</td>
+                                <td>3 MB</td>
+                                <td>HD 620</td>
+                            </tr>
+                            <tr>
+                                <td>i5-7300U</td>
+                                <td>2.6 GHz</td>
+                                <td>3.5 GHz</td>
+                                <td>3 MB</td>
+                                <td>HD 620</td>
+                            </tr>
+                            <tr>
+                                <td>i7-7500U</td>
+                                <td>2.7 GHz</td>
+                                <td>3.5 GHz</td>
+                                <td>4 MB</td>
+                                <td>HD 620</td>
+                            </tr>
+                            <tr>
+                                <td>i7-7600U</td>
+                                <td>2.8 GHz</td>
+                                <td>3.9 GHz</td>
+                                <td>4 MB</td>
+                                <td>HD 620</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Graphics</h3>
+                <ul>
+                    <li>
+                        Most models use only the integrated Intel HD Graphics
+                        520 or 620
+                    </li>
+                    <li>
+                        Some models add an NVIDIA GeForce 940MX with 2 GB of
+                        GDDR5 memory. These aren't sold in EMEA.
+                    </li>
+                    <li>
+                        Up to three independent displays, connected through HDMI
+                        or USB Type-C
+                    </li>
+                    <li>
+                        Maximum external resolution is 4096x2304 at 60 Hz over
+                        USB Type-C and 4096x2160 at 24 Hz over HDMI
+                    </li>
+                </ul>
+                <p>To see which processor and GPU your machine has on Linux:</p>
+                <pre><code>lscpu | grep "Model name"
+lspci | grep -E "VGA|3D"</code></pre>
+            </section>
+
+            <section class="main-section" id="Memory_and_Storage">
+                <header>Memory and Storage</header>
+                <p>
+                    The T470 has two DDR4 SO-DIMM sockets and no soldered
+                    memory, so all of it can be upgraded. Lenovo lists a maximum
+                    of 32 GB at 2400 MHz, dual-channel capable. The processors
+                    run memory at DDR4-2133, so faster sticks work but clock
+                    down.
+                </p>
+
+                <h3>Choosing RAM</h3>
+                <ul>
+                    <li>Use DDR4 SO-DIMM laptop memory, 2133 MHz or faster</li>
+                    <li>
+                        Fit two identical sticks. Dual channel can nearly double
+                        integrated graphics speed.
+                    </li>
+                    <li>Two 16 GB sticks reach the official 32 GB maximum</li>
+                </ul>
+
+                <h3>Storage options</h3>
+                <p>
+                    The main drive bay takes either a 2.5-inch drive or an M.2
+                    2280 SSD, not both at once.
+                </p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Drive</th>
+                                <th scope="col">Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2.5" HDD</td>
+                                <td>
+                                    SATA 6.0 Gb/s, 7 mm high, with Active
+                                    Protection System
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2.5" SSD</td>
+                                <td>SATA 6.0 Gb/s, 7 mm high</td>
+                            </tr>
+                            <tr>
+                                <td>M.2 2280 SSD</td>
+                                <td>PCIe NVMe, PCIe 3.0 x2, 16 Gb/s</td>
+                            </tr>
+                            <tr>
+                                <td>Second drive</td>
+                                <td>
+                                    128 GB M.2 SATA SSD in the WWAN slot. Can't
+                                    be combined with WWAN or WiGig.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    The M.2 slot runs at PCIe 3.0 x2, so a fast x4 NVMe drive
+                    works but tops out around half its rated speed. There is no
+                    optical drive.
+                </p>
+
+                <div class="caution">
+                    <p>
+                        <strong>Before you open the case:</strong> turn off the
+                        built-in battery in the BIOS under Config, Power, and
+                        remove the rear battery. The laptop won't turn on again
+                        until you plug in the charger, so nothing is live while
+                        you work.
+                    </p>
+                </div>
+
+                <h3>Step by step</h3>
+                <ol>
+                    <li>
+                        Shut down, unplug the charger, disable the built-in
+                        battery and pull out the rear battery
+                    </li>
+                    <li>
+                        Loosen the bottom cover screws. They stay attached to
+                        the cover.
+                    </li>
+                    <li>
+                        Pry the cover off with a plastic tool, not a screwdriver
+                    </li>
+                    <li>
+                        Swap the part. RAM goes in at an angle and clicks down.
+                        An M.2 SSD goes in at an angle and is held by one screw.
+                    </li>
+                    <li>Close it up and plug in the charger to wake it</li>
+                    <li>
+                        The first boot after a RAM change may show a black
+                        screen for a minute while it trains the memory. Let it
+                        finish.
+                    </li>
+                </ol>
+                <p>Check what's installed and how healthy it is on Linux:</p>
+                <pre><code>sudo dmidecode -t memory | grep -E "Size|Speed|Type:"
+lsblk -o NAME,SIZE,MODEL
+sudo smartctl -a /dev/nvme0 | grep -E "Percentage Used|Data Units Written"</code></pre>
+            </section>
+
+            <section class="main-section" id="Display">
+                <header>Display</header>
+                <p>
+                    All T470 screens are 14.0-inch, 16:9, anti-glare panels with
+                    LED backlights. Three panels were offered, and the
+                    difference between them is big.
+                </p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Panel</th>
+                                <th scope="col">Brightness</th>
+                                <th scope="col">Contrast</th>
+                                <th scope="col">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HD 1366x768</td>
+                                <td>220 nits</td>
+                                <td>400:1</td>
+                                <td>Low resolution, narrow viewing angles</td>
+                            </tr>
+                            <tr>
+                                <td>FHD 1920x1080</td>
+                                <td>220 nits</td>
+                                <td>400:1 or 500:1</td>
+                                <td>Sharper, still not IPS</td>
+                            </tr>
+                            <tr>
+                                <td>FHD IPS 1920x1080</td>
+                                <td>250 nits</td>
+                                <td>700:1</td>
+                                <td>
+                                    170° viewing angle. Optional 10-finger
+                                    on-cell touch.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    The FHD IPS panel is the one to get. Touch is only offered
+                    on the FHD IPS panel with the PPS display cover. On Linux
+                    you can check the panel model with:
+                </p>
+                <pre><code>sudo get-edid | parse-edid | grep ModelName</code></pre>
+            </section>
+
+            <section class="main-section" id="Ports_and_Wireless">
+                <header>Ports and Wireless</header>
+                <p>
+                    The T470 doesn't need dongles for everyday use. Thunderbolt
+                    3 on the Type-C port handles charging, displays and fast
+                    storage.
+                </p>
+
+                <h3>Ports</h3>
+                <ul>
+                    <li>Three USB 3.1 Gen 1 (USB 3.0), one Always On</li>
+                    <li>
+                        One USB 3.1 Type-C Gen 2 / Thunderbolt 3 with Power
+                        Delivery and DisplayPort
+                    </li>
+                    <li>HDMI 1.4b</li>
+                    <li>Ethernet (RJ-45)</li>
+                    <li>Dock connector</li>
+                    <li>
+                        4-in-1 reader (MMC, SD, SDHC, SDXC), SD 3.0 with UHS-I
+                    </li>
+                    <li>Combo audio and microphone jack</li>
+                    <li>Optional smart card reader</li>
+                </ul>
+                <p>
+                    For VGA projectors, Lenovo sells an HDMI to VGA adapter and
+                    a USB-C to VGA adapter. An optional ThinkPad WiGig dock
+                    connects wirelessly.
+                </p>
+
+                <h3>Wired and wireless networking</h3>
+                <div class="table-wrap">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Ethernet</td>
+                                <td>
+                                    Intel I219-V (non-vPro) or I219-LM (vPro)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Wi-Fi</td>
+                                <td>
+                                    One M.2 card: Realtek RTL8822BE, Intel 8260,
+                                    Intel 8265 or Intel Tri-Band 18265 with
+                                    WiGig. All are 2x2 802.11ac.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bluetooth</td>
+                                <td>
+                                    4.1, built into the Wi-Fi card. The Intel
+                                    8265 and 18265 support 4.2 but Windows
+                                    limits them to 4.1.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>WWAN</td>
+                                <td>
+                                    Optional 4G LTE-A (Sierra Wireless EM7455)
+                                    or 4G LTE (Fibocom L831-EAU, EMEA only)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SIM</td>
+                                <td>Micro-SIM slot on WWAN models</td>
+                            </tr>
+                            <tr>
+                                <td>NFC</td>
+                                <td>Optional</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Intel Wi-Fi cards have the best Linux support. If yours came
+                    with the Realtek card, swapping it for an Intel 8265 is a
+                    cheap upgrade.
+                </p>
+
+                <h3>Camera and audio</h3>
+                <ul>
+                    <li>
+                        Optional 720p camera, or an IR plus 720p camera for
+                        Windows Hello (not with WiGig)
+                    </li>
+                    <li>
+                        Realtek ALC3268 codec, 2 W x 2 stereo speakers, dual
+                        array microphones
+                    </li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Battery_and_Power">
+                <header>Battery and Power</header>
+                <p>
+                    The T470 uses Power Bridge: an internal 3-cell 24 Wh battery
+                    plus a removable rear battery that's either 3-cell 24 Wh or
+                    6-cell 48 Wh or 72 Wh. You can swap the rear battery while
+                    the laptop is running. The laptop drains the rear one first,
+                    so it wears faster and is the cheaper one to replace.
+                </p>
+
+                <h3>Battery life (MobileMark 2014)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Batteries</th>
+                                <th scope="col">Integrated GPU</th>
+                                <th scope="col">Discrete GPU</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>3-cell</td>
+                                <td>6.9 hr</td>
+                                <td>6.9 hr</td>
+                            </tr>
+                            <tr>
+                                <td>3 + 3-cell</td>
+                                <td>13.9 hr</td>
+                                <td>13.9 hr</td>
+                            </tr>
+                            <tr>
+                                <td>6-cell 48 Wh</td>
+                                <td>13.9 hr</td>
+                                <td>14.3 hr</td>
+                            </tr>
+                            <tr>
+                                <td>6-cell 72 Wh</td>
+                                <td>20.9 hr</td>
+                                <td>21.6 hr</td>
+                            </tr>
+                            <tr>
+                                <td>3 + 6-cell 48 Wh</td>
+                                <td>20.9 hr</td>
+                                <td>21.2 hr</td>
+                            </tr>
+                            <tr>
+                                <td>3 + 6-cell 72 Wh</td>
+                                <td>27.1 hr</td>
+                                <td>28.6 hr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    These are lab numbers. Real-world battery life is much lower
+                    and depends on screen brightness and what you run. The 72 Wh
+                    rear battery sticks out underneath but is the best upgrade
+                    for battery life.
+                </p>
+
+                <h3>Chargers</h3>
+                <p>
+                    The T470 charges from a 45 W or 65 W slim-tip adapter, or a
+                    45 W or 65 W USB Type-C adapter on the Thunderbolt port. Use
+                    65 W on models with the NVIDIA GPU.
+                </p>
+
+                <h3>Check battery health</h3>
+                <p>
+                    Compare each battery's current full capacity with its design
+                    capacity. Under 80% means it's worn. On Windows:
+                </p>
+                <pre><code>powercfg /batteryreport</code></pre>
+                <p>
+                    On Linux, the internal battery is <code>BAT0</code> and the
+                    rear one is <code>BAT1</code>:
+                </p>
+                <pre><code>upower -i /org/freedesktop/UPower/devices/battery_BAT0
+upower -i /org/freedesktop/UPower/devices/battery_BAT1</code></pre>
+
+                <h3>Set a charge limit</h3>
+                <p>
+                    Batteries wear fastest when they sit full and warm. Capping
+                    the charge around 80% slows that down a lot. On Windows, use
+                    Lenovo Vantage under Power. On Linux, set it for both
+                    batteries:
+                </p>
+                <pre><code>echo 75 | sudo tee /sys/class/power_supply/BAT{0,1}/charge_control_start_threshold
+echo 80 | sudo tee /sys/class/power_supply/BAT{0,1}/charge_control_end_threshold</code></pre>
+                <p>
+                    These reset on reboot, so use TLP (covered in Linux and
+                    Firmware) to keep them.
+                </p>
+            </section>
+
+            <section class="main-section" id="Keyboard_and_Security">
+                <header>Keyboard and Security</header>
+                <p>
+                    The T470 has a 6-row, spill-resistant keyboard with
+                    multimedia Fn keys and an optional LED backlight. Below it
+                    is the UltraNav: a TrackPoint with three physical buttons
+                    and a buttonless Mylar multi-touch touchpad.
+                </p>
+
+                <h3>Shortcuts</h3>
+                <ul>
+                    <li>
+                        <kbd>Fn</kbd> + <kbd>Esc</kbd> toggles FnLock, which
+                        swaps media keys and F1 to F12
+                    </li>
+                    <li>
+                        <kbd>Fn</kbd> + <kbd>Space</kbd> cycles the keyboard
+                        backlight on models that have one
+                    </li>
+                    <li>
+                        <kbd>Fn</kbd> and <kbd>Ctrl</kbd> can be swapped in the
+                        BIOS under Config, Keyboard/Mouse
+                    </li>
+                    <li>
+                        Hold the middle TrackPoint button and push to scroll
+                    </li>
+                </ul>
+                <p>
+                    The keyboard is cheap to replace and comes out from the top
+                    after removing a couple of screws. Check the HMM for the
+                    exact steps.
+                </p>
+
+                <h3>Security features</h3>
+                <ul>
+                    <li>
+                        Power-on, hard disk and supervisor passwords, plus a
+                        security keyhole
+                    </li>
+                    <li>Discrete TPM 1.2 or 2.0, TCG certified</li>
+                    <li>Optional Intel vPro on supported processors</li>
+                    <li>
+                        Optional touch fingerprint reader with match-on-chip, on
+                        the keyboard bezel
+                    </li>
+                    <li>Optional smart card reader and NFC</li>
+                </ul>
+            </section>
+
+            <section class="main-section" id="Linux_and_Firmware">
+                <header>Linux and Firmware</header>
+                <p>
+                    The T470 runs Linux well. The Intel chipset, graphics and
+                    Wi-Fi cards are supported out of the box, and the
+                    <code>thinkpad_acpi</code> driver handles the Fn keys, fan
+                    and both batteries.
+                </p>
+
+                <h3>Power management with TLP</h3>
+                <p>
+                    TLP tunes power use and keeps your charge limits across
+                    reboots. Turn off <code>power-profiles-daemon</code> first,
+                    since it conflicts with TLP:
+                </p>
+                <pre><code>sudo apt install tlp tlp-rdw
+sudo systemctl mask power-profiles-daemon
+sudo systemctl enable --now tlp
+sudo tlp-stat -b</code></pre>
+                <p>
+                    Then add the thresholds for both batteries to
+                    <code>/etc/tlp.conf</code> and run
+                    <code>sudo tlp start</code>:
+                </p>
+                <pre><code>START_CHARGE_THRESH_BAT0=75
+STOP_CHARGE_THRESH_BAT0=80
+START_CHARGE_THRESH_BAT1=75
+STOP_CHARGE_THRESH_BAT1=80</code></pre>
+
+                <h3>BIOS</h3>
+                <p>
+                    Press <kbd>F1</kbd> at power-on for BIOS setup or
+                    <kbd>F12</kbd> for the boot menu. <kbd>Enter</kbd> shows the
+                    startup menu with all options.
+                </p>
+                <ul>
+                    <li>
+                        Config, Power: disable the built-in battery before
+                        repairs
+                    </li>
+                    <li>
+                        Config, Keyboard/Mouse: swap Fn and Ctrl, and set the F1
+                        to F12 default
+                    </li>
+                    <li>
+                        Security, Virtualization: turn on VT-x for virtual
+                        machines and WSL
+                    </li>
+                    <li>Startup: set the boot order and choose UEFI only</li>
+                </ul>
+
+                <h3>Updating firmware</h3>
+                <p>
+                    Install BIOS and Thunderbolt firmware updates, since they
+                    fix security holes and hardware bugs. On Linux, use LVFS:
+                </p>
+                <pre><code>fwupdmgr refresh
+fwupdmgr get-updates
+fwupdmgr update</code></pre>
+                <p>
+                    On Windows, use Lenovo Vantage or download the update from
+                    Lenovo's support site. Plug in the charger first and never
+                    turn the laptop off while an update runs.
+                </p>
+            </section>
+        </main>
+
+        <script>
+            async function copyText(text) {
+                if (navigator.clipboard && window.isSecureContext) {
+                    await navigator.clipboard.writeText(text);
+                    return;
+                }
+                const area = document.createElement("textarea");
+                area.value = text;
+                area.setAttribute("readonly", "");
+                area.style.position = "fixed";
+                area.style.opacity = "0";
+                document.body.appendChild(area);
+                area.select();
+                const ok = document.execCommand("copy");
+                area.remove();
+                if (!ok) throw new Error("Copy failed");
+            }
+
+            const copyIcon =
+                '<svg class="icon-copy" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>';
+            const checkIcon =
+                '<svg class="icon-check" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+
+            document.querySelectorAll("#main-doc pre").forEach((pre) => {
+                const block = document.createElement("div");
+                block.className = "code-block";
+                pre.before(block);
+                block.append(pre);
+
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "copy-btn";
+                button.title = "Copy";
+                button.setAttribute("aria-label", "Copy command");
+                button.innerHTML = copyIcon + checkIcon;
+                block.append(button);
+
+                let timer;
+                button.addEventListener("click", async () => {
+                    try {
+                        await copyText(pre.innerText.trim());
+                    } catch {
+                        return;
+                    }
+                    button.classList.add("is-copied");
+                    button.setAttribute("aria-label", "Copied");
+                    button.title = "Copied";
+                    clearTimeout(timer);
+                    timer = setTimeout(() => {
+                        button.classList.remove("is-copied");
+                        button.setAttribute("aria-label", "Copy command");
+                        button.title = "Copy";
+                    }, 2000);
+                });
+            });
+        </script>
+    </body>
+</html>
